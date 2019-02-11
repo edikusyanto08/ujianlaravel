@@ -1,0 +1,3 @@
+Log database per 4 Februari 2018:
+- Table 'pelajaran':
+  Hapus foreign key dari field 'jenis_pelajaran_id' v -> Prod & Dev aman

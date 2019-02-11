@@ -1,0 +1,13 @@
+table { border-collapse: collapse; border-spacing: 0;}
+th { background-color: #448aff; color: #fff;}
+td, th { padding: 0;}
+table, th, td { border: 1px solid #212121;}
+table { width: 100%; display: table;}
+thead { border-bottom: 1px solid #212121;}
+td, th { padding: 15px 5px; display: table-cell; text-align: left; vertical-align: middle; border-radius: 2px;}
+.table td, .table th { font-family: Ubuntu; text-align: center; padding:0; }
+.red-text { color: #f44336; }
+.hadir { background:#20b413;}
+.izin { background:#ff9d0a;}
+.sakit { background:#0a75c9;}
+.alfa { background:#cd0808;}

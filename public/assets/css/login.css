@@ -1,0 +1,148 @@
+/* Custom Form CSS */
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #3f51b5;
+  -webkit-box-shadow: 0 1px 0 0 #3f51b5;
+          box-shadow: 0 1px 0 0 #3f51b5;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type=text]:not(.browser-default):focus:not([readonly]) + label,
+input[type=password]:not(.browser-default):focus:not([readonly]) + label,
+input[type=email]:not(.browser-default):focus:not([readonly]) + label,
+input[type=url]:not(.browser-default):focus:not([readonly]) + label,
+input[type=time]:not(.browser-default):focus:not([readonly]) + label,
+input[type=date]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
+input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
+input[type=number]:not(.browser-default):focus:not([readonly]) + label,
+input[type=search]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #3f51b5;
+}
+
+.input-field .prefix.active {
+  color: #3f51b5;
+}
+
+#loader-overlay {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+    display: block;
+    background-color: #eee;
+    z-index: 999999;
+}
+#loader {
+    animation: animate 1.5s linear infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: calc(50% - 40px);
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(220deg)
+    }
+}
+#loader:after {
+    animation: animate2 1.5s ease-in-out infinite;
+    clip: rect(0, 80px, 80px, 40px);
+    content: '';
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+}
+@keyframes animate2 {
+    0% {
+        box-shadow: inset #3f51b5 0 0 0 17px;
+        transform: rotate(-140deg);
+    }
+    50% {
+        box-shadow: inset #3f51b5 0 0 0 2px;
+    }
+    100% {
+        box-shadow: inset #3f51b5 0 0 0 17px;
+        transform: rotate(140deg);
+    }
+}
+.dark-custom {
+    background-color: #2c384a!important;
+}
+.mar-bot {
+    margin-bottom: 0!important;
+}
+.login-logo {
+    font-size: 50px;
+    font-weight: 300;
+}
+.login-logo i {
+    /*float: left;*/
+
+    line-height: inherit;
+    font-size: 42px;
+    margin-right: 12px;
+}
+.login-container,
+.home-container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+@media only screen and (min-width: 601px) {
+    .login-container,
+    .loader-modal-overlay,
+    .home-container {
+        width: 85%;
+    }
+}
+@media only screen and (min-width: 993px) {
+    .login-container {
+        width: 28%;
+    }
+    .loader-modal-overlay {
+        width: 30%;
+    }
+    .home-container {
+        width: 85%;
+    }
+}
+.login-container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.login-container .row,
+.home-container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+.btn {
+    font-weight: 500;
+}
+.btn-full {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    border-radius: 40px;
+}

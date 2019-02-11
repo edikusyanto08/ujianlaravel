@@ -1,0 +1,23 @@
+body {
+  background: #252a2f;
+  margin:0;
+  padding:0;
+  overflow:hidden
+}
+
+h5 {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+}
+.btn{
+  opacity: 0;
+}
+
+svg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 90%;
+  width: 100%
+}
